@@ -17,6 +17,9 @@ function memberctrl() {
     }
 
     this.getallmembers = function(res) {
+
+
+
         members.find({}).exec(function(err, results) {
            if (err) {
               res.status(500).send(err);
@@ -60,7 +63,7 @@ function memberctrl() {
             res.status(500).send(err);
         } else {
             if (result && result.fname) {
-                res.send("Member Deleted");
+                res.send("Member added");
             } else {
                 res.status(404).send("Member not found.");
             }
