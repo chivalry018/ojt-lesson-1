@@ -63,7 +63,7 @@ function memberctrl() {
             res.status(500).send(err);
         } else {
             if (result && result.fname) {
-                res.send("Member added");
+                res.send("Member deleted");
             } else {
                 res.status(404).send("Member not found.");
             }
